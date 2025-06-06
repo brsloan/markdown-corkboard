@@ -498,6 +498,10 @@ function showHelp(){
     var popup = document.createElement("div");
     popup.classList.add("popup-dialog", "popup-shortcuts");
 
+    var title = document.createElement('h1');
+    title.innerText = "Shortcuts Help";
+    popup.appendChild(title);
+
     const cmdOrCtrl = 'Cmd/Ctrl';
 
     var shortcuts = [
