@@ -23,6 +23,10 @@ document.getElementById('loadBtn').addEventListener('click', function(){
   uploadTextFile();
 });
 
+document.getElementById('helpBtn').addEventListener('click', function(){
+  showHelp();
+});
+
 document.body.addEventListener('keydown', boardCntrlEvents);
 
 function showCorkboard(project){
