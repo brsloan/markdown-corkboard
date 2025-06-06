@@ -296,6 +296,7 @@ function uploadTextFile(){
   var fileInput = document.createElement('input');
   fileInput.id = 'fileInput';
   fileInput.type = 'file';
+  fileInput.accept = '.txt, .md';
 
   fileInput.addEventListener('change', function(e){
     const file = e.target.files[0];
@@ -307,7 +308,10 @@ function uploadTextFile(){
       document.getElementById('projectName').value = getTitleFromFilename(file.name);
     }
 
-    reader.readAsText(file);
+    if(file && file.type && file.type.startsWith('text/')){
+      reader.readAsText(file);
+    }
+    
     
 
   });
