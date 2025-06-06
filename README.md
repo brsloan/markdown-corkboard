@@ -48,6 +48,10 @@ If any card has both a color and is checked off, the color must come before the 
 
 That's it!
 
+# Origins
+
+This was originall written as a component for the novel-writing program [WareWoolf](https://github.com/brsloan/warewoolf), but I liked it so much I wanted a mobile version I could access anywhere without installing WareWoolf.
+
 # Shortcuts
 
 ### Navigation
