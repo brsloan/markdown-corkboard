@@ -1,0 +1,306 @@
+
+.popup-corkboard {
+    width: 100%;
+    height: 100%;
+    overflow-y:hidden;
+  }
+  
+  #corkboard {
+    display: block;
+    width: 100%;
+    overflow-y: scroll;
+    height: 100%;
+  }
+  
+  #corkboard-title-bar {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .corkboard-column {
+    display: block;
+    border-bottom: 3px dashed gray;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+  }
+  
+  .corkboard-card {
+    display: inline-block;
+    position: relative;
+    width: 15em;
+    margin: 6px;
+    font-size: var(--dialog-font-size-small);
+  }
+  
+  .corkboard-card-unused {
+    opacity: 0.5;
+  }
+  
+  .corkboard-card textarea {
+    resize: none;
+  }
+  
+  .card-num-label {
+    display: inline;
+    font-size: var(--dialog-font-size-small);
+    margin-left: 3px;
+  }
+  
+  .card-label {
+    width: 80%;
+    font-size: var(--dialog-font-size-small);
+  }
+  
+  .card-description {
+    width: 95%;
+    height: 5em;
+    font-size: var(--dialog-font-size-small);
+    margin: 0px;
+   }
+  
+   .card-checkmark {
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    right: 12px;
+    transform: rotate(45deg);
+    height: 25px;
+    width: 12px;
+    border-bottom: 7px solid #78b13f;
+    border-right: 7px solid #78b13f;
+  }
+  
+  .card-checkmark-checked {
+  display: block;
+  }
+
+  #outline {
+    height: 100%;
+    width: 100%;
+  }
+
+  #flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #corkboard-container {
+    display: block;
+    width: 75%;
+  }
+
+  #outline-container {
+    display: block;
+    width: 25%;
+  }
+
+  @media (prefers-color-scheme: light) {
+
+    body {
+      background-color: #EDF2F4;
+    }
+  
+    #writing-field {
+      background-color: #ffffff;
+    }
+  
+    ::-webkit-scrollbar {
+      background-color: none;
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background: #aaa;
+    }
+  
+    .popup, .popup-dialog, .working-popup, .popup-corkboard {
+      background-color: #2B2D42;
+      color: white;
+    }
+  
+    .popup-outliner {
+      background-color: #2B2D42;
+      color: black;
+    }
+  
+    .popup-outliner th{
+      background-color: #EDF2F4;
+    }
+  
+    .popup-outliner td{
+      background-color: #EDF2F4;
+    }
+  
+    .popup a{
+      color: white;
+    }
+  
+    button, input[type=submit] {
+      background-color: #EDF2F4;
+      color: black;
+    }
+  
+    :focus {
+      outline-color: #EF233C;
+    }
+  
+    #chapter-list-sidebar:focus {
+      outline: none;
+    }
+  
+    .warning-text {
+      color: gold;
+    }
+  
+    .corkboard-card {
+      background-color: white;
+      border: 1px solid black;
+    }
+  
+    .corkboard-card-horiz {
+      border: 1px solid black;
+      background-color: white;
+    }
+  
+    .card-num-label {
+      color: black;
+    }
+  
+    .corkboard-color1 {
+      background-color: #ed553b;
+    }
+  
+    .corkboard-color2 {
+      background-color: #20639b;
+    }
+  
+    .corkboard-color3 {
+      background-color: #3caea3;
+    }
+  
+    .corkboard-color4 {
+      background-color: #f6d55c;
+    }
+  
+    .corkboard-color5 {
+      background-color: #8b3bed;
+    }
+  
+    .corkboard-color6 {
+      background-color: #ed3bed;
+    }
+    .corkboard-color7 {
+      background-color: #ed733b;
+    }
+    .corkboard-color8 {
+      background-color: #3bedbe;
+    }
+    .corkboard-color9 {
+      background-color: #3b94ed;
+    }
+  
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    body {
+      background-color: #191a26;
+    }
+  
+    #writing-field {
+      background-color: #191a26;
+      color: #ffffff;
+    }
+  
+    .sidebar {
+      color: #abb2bf;
+    }
+  
+    ::-webkit-scrollbar {
+      background-color: none;
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background: #4b5362;
+    }
+  
+    .popup, .popup-dialog, .working-popup, .popup-corkboard {
+      background-color: #2B2D42;
+      color: white;
+      border: 2px solid gray;
+    }
+  
+    .popup-outliner {
+      background-color: #191a26;
+      color: white;
+    }
+  
+    :focus {
+      outline-color: #EF233C;
+    }
+  
+    #chapter-list-sidebar:focus {
+      outline: none;
+    }
+  
+    .warning-text {
+      color: darkorange;
+    }
+  
+  .ql-editor.ql-blank::before{
+      color: #abb2bf;
+    }
+  
+    .corkboard-card {
+      background-color: #191a26;
+      border: 1px solid gray;
+    }
+  
+    .corkboard-card-horiz {
+      border: 1px solid gray;
+      background-color: #191a26;
+    }
+  
+    .card-num-label {
+      color: white;
+    }
+  
+    .corkboard-card input, .corkboard-card textarea {
+      background-color: #191a26;
+      color: white;
+    }
+  
+    .corkboard-color1 {
+      background-color: #ed553b;
+    }
+  
+    .corkboard-color2 {
+      background-color: #20639b;
+    }
+  
+    .corkboard-color3 {
+      background-color: #3caea3;
+    }
+  
+    .corkboard-color4 {
+      background-color: #f6d55c;
+    }
+  
+    .corkboard-color5 {
+      background-color: #8b3bed;
+    }
+  
+    .corkboard-color6 {
+      background-color: #ed3bed;
+    }
+    .corkboard-color7 {
+      background-color: #ed733b;
+    }
+    .corkboard-color8 {
+      background-color: #3bedbe;
+    }
+    .corkboard-color9 {
+      background-color: #3b94ed;
+    }
+  
+  }
