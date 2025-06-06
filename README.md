@@ -1,6 +1,6 @@
 # markdown-corkboard
 
-Digital corkboard that saves as a plain text markdown file readable as an outline, for planning novels/stories/screenplays.
+Digital corkboard that saves as a plain text markdown file readable as an outline, for planning novels/stories/screenplays. Test it live at [https://brsloan.github.io/markdown-corkboard/](https://brsloan.github.io/markdown-corkboard/).
 
 ![screenshot of program described](markdown-corkboard_screenshot.png?raw=true)
 
